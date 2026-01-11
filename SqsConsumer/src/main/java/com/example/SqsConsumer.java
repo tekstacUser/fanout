@@ -22,7 +22,7 @@ public class SqsConsumer {
                 .region(Region.AP_SOUTH_1)
                 .build();
 
-        String queueUrl = "https://sqs.ap-south-1.amazonaws.com/272337084608/fanout-file-queue";
+        String queueUrl = "https://sqs.<REGION>.amazonaws.com/<ACCOUNT_ID>/<SNS_QUEUE>";
         ObjectMapper mapper = new ObjectMapper();
 
         while (true) {
@@ -76,3 +76,4 @@ public class SqsConsumer {
         }
     }
 }
+
