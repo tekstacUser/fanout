@@ -5,7 +5,7 @@ import software.amazon.awssdk.services.sqs.model.*;
 
 public class SqsConsumerApp {
 
-    private static final String QUEUE_URL = "https://sqs.ap-south-1.amazonaws.com/272337084608/sns-to-sqs-queue";
+    private static final String QUEUE_URL = "<SQS_QUEUE_URL>";
 
     public static void main(String[] args) {
 
@@ -37,3 +37,4 @@ public class SqsConsumerApp {
         }
     }
 }
+
